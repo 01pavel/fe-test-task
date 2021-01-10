@@ -1,0 +1,19 @@
+// app
+export const SET_ERROR = 'SET_ERROR';
+
+// game
+export const REQUEST_GAME = 'REQUEST_GAME';
+export const TOGGLE_GAME_LOADER = 'TOGGLE_GAME_LOADER';
+export const REQUEST_GAME_SUCCESS = 'REQUEST_GAME_SUCCESS';
+export const MAKE_MOVE = 'MAKE_MOVE';
+export const TOGGLE_MOVE_LOADER = 'TOGGLE_MOVE_LOADER';
+export const MAKE_MOVE_SUCCESS = 'MAKE_MOVE_SUCCESS';
+export const RESET_GAME = 'RESET_GAME';
+export const START_NEXT_GAME = 'START_NEXT_GAME';
+export const WRITE_GAME_LOG = 'WRITE_GAME_LOG';
+
+// score
+export const REQUEST_SCORE_DATA = 'REQUEST_SCORE';
+export const REQUEST_SCORE_DATA_SUCCESS = 'REQUEST_SCORE_DATA_SUCCESS';
+export const TOGGLE_SCORE_LOADER = 'TOGGLE_SCORE_LOADER';
+export const ADD_SCORE = 'ADD_SCORE';

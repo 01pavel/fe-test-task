@@ -1,7 +1,7 @@
 {
   "app": {
     "name": "Frontend testcase",
-    "port": 3000,
+    "port": 5000,
     "loglevel": "debug",
     "front_path": "/front"
   }

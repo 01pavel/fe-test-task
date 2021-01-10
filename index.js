@@ -7,7 +7,7 @@ const logger = require('./src/logger.js');
 const app = express();
 app.enable('trust proxy');
 app.use(logger.log4js.connectLogger(logger.getLogger('express'), {level: 'auto'}));
-const root = __dirname + config.app.front_path;
+const root = `${__dirname}${config.app.front_path}/public`;
 app.use(express.static(root));
 
 if (process.env.PORT)

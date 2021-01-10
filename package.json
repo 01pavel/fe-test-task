@@ -3,17 +3,22 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "start": "npm install && LOGLEVEL=info node .",
-    "dev": "npm install && ./node_modules/.bin/gulp"
+    "start": "npm run install-deps && concurrently \"npm run start-server\" \"npm run start-client\"",
+    "start-server": "LOGLEVEL=info node .",
+    "start-client": "cd ./front && npm start",
+    "dev": "npm install && ./node_modules/.bin/gulp",
+    "install-deps": "npm i && cd ./front && npm i"
   },
   "author": "Flow Health",
   "license": "ISC",
   "devDependencies": {
+    "concurrently": "^5.3.0",
     "gulp": "^3.9.1",
     "ps-tree": "^1.1.0",
     "shelljs": "^0.7.8"
   },
   "dependencies": {
+    "@material-ui/core": "^4.11.2",
     "body-parser": "^1.18.2",
     "error-to-json": "^1.1.0",
     "express": "^4.16.2",
@@ -25,6 +30,10 @@
     "nicnacno": "^2.0.2",
     "nocache": "^2.0.0",
     "node-fetch": "^1.7.3",
+    "react-redux": "^7.2.2",
+    "react-router-dom": "^5.2.0",
+    "redux": "^4.0.5",
+    "redux-saga": "^1.1.3",
     "tictactoe-agent": "^2.1.2"
   }
 }
